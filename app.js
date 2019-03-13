@@ -72,6 +72,7 @@ doSomething().country;
 */
 
 // BUDGET CONTROLLER
+
 var budgetController = (function () {
 
   var Expense = function(id, description, value) {
@@ -86,8 +87,19 @@ var budgetController = (function () {
     this.value = value;
   };
 
+// It is better in order to store data, to create objects inside a bigger object ( data object )
 
-
+  var data = {
+    
+    allItems: {
+      exp: [],
+      inc: []
+    },
+    totals: {
+      exp: 0,
+      inc: 0
+    }    
+  }
 
 })();
 
