@@ -153,7 +153,8 @@ var budgetController = (function () {
      // map method is different from forEach method
      // map method returns a brand new array
      // Like forEach, it allows us to loop through an array
-    
+     // Map calls a function on every element of an array 
+     // and then puts the values into an new aray.
       ids = data.allItems[type].map(function(current) {
         return current.id;  
       });
